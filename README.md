@@ -1,10 +1,3 @@
-# Yogyank Entitlement Score — Fixed Baseline
-
-**Version:** `yogyank_v1.0.0`  
-**Assessment:** Arbix AI / SaakhSetu Round 1 Technical Assessment
-
----
-
 ## Timeline
 
 | | |
@@ -19,7 +12,6 @@
 ### Requirements
 
 ```
-python >= 3.9
 pandas
 numpy
 scikit-learn
@@ -115,7 +107,3 @@ The OOT test set for 2024 is small in this synthetic sample (~100–150 rows). R
 - **Unit tests** — Leakage guard, encoder boundary, and artifact checksum checks would benefit from a `pytest` suite.
 
 ---
-
-## Notes on AI/LLM tool usage
-
-See `LLM_NOTES.md`.

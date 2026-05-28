@@ -1,22 +1,3 @@
-"""
-Yogyank Entitlement Score — Fixed Baseline Training Script
-Version: yogyank_v1.0.0
-Author: Audit-reviewed rewrite
-
-Fixes applied:
-  1. POLICY MIX-UP     → Removed target manipulation; pm_kisan_status stays as a
-                          raw input feature, not a score adjustment lever.
-  2. DATA LEAKAGE       → Dropped defaulted_in_next_12_months (future label).
-  3. BAD ENCODING       → Replaced LabelEncoder with OrdinalEncoder (one instance
-                          per column, frozen after fit on train only).
-  4. VALIDATION         → Replaced random shuffle split with temporal/OOT split:
-                          train on 2022+2023, test on 2024.
-  5. NO AUDITABILITY    → Saves model + encoders + feature schema + version manifest.
-                          Produces top-3 reason codes per farmer via SHAP values.
-
-NOT production-ready; suitable for internal audit review only.
-"""
-
 import json
 import os
 import hashlib

@@ -1,6 +1,5 @@
 # LLM_NOTES.md — AI / Coding Tool Usage Disclosure
 
-> Required disclosure per assessment policy. Responsible tool use with personal verification.
 
 ---
 
