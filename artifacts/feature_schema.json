@@ -1,0 +1,47 @@
+{
+  "numeric_features": [
+    "land_area_acres",
+    "historical_repayment_score",
+    "annual_income_inr",
+    "liability_ratio_pct",
+    "rainfall_deviation_pct",
+    "ndvi_score"
+  ],
+  "categorical_features": [
+    "district",
+    "crop_type",
+    "pm_kisan_status",
+    "irrigation_type",
+    "land_ownership",
+    "soil_type",
+    "sales_channel"
+  ],
+  "all_features_ordered": [
+    "land_area_acres",
+    "historical_repayment_score",
+    "annual_income_inr",
+    "liability_ratio_pct",
+    "rainfall_deviation_pct",
+    "ndvi_score",
+    "district",
+    "crop_type",
+    "pm_kisan_status",
+    "irrigation_type",
+    "land_ownership",
+    "soil_type",
+    "sales_channel"
+  ],
+  "target": "target_entitlement_score",
+  "excluded_with_reason": {
+    "farmer_id": "identifier \u2014 no predictive signal",
+    "application_year": "used only for OOT split, not a model feature",
+    "defaulted_in_next_12_months": "LEAKAGE \u2014 future label not available at scoring time"
+  },
+  "train_years": [
+    2022,
+    2023
+  ],
+  "test_years": [
+    2024
+  ]
+}
